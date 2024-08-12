@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Lichess IM Title Adder",
+  "version": "1.0",
+  "description": "Adds an IM title span in a certain div on Lichess.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://lichess.org/@/*","https://lichess.org/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "icon.png"
+  }
+}
